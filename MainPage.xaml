@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hchavezT1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image Source="iess.jpg"/>
+
+            <Label x:Name="lbl1" Text="Calculadora de Aporte al IESS"/>
+            <Label x:Name="lbl2" Text="Ingrese sus datos y se calculará su aporte respectivo."/>
+            
+            <Entry x:Name="txtNombre" 
+                   Placeholder="Nombre"/>
+            
+            <Entry x:Name="txtApellido" 
+                   Placeholder="Apellido"/>
+            
+            <Entry x:Name="txtSalario" 
+                   Placeholder="Salario" Keyboard="Numeric"/>
+            
+            <Entry x:Name="txtEdad" 
+                   Placeholder="Edad" Keyboard="Numeric"/>
+
+            <Button x:Name="txtButtom"
+                    Text="Calcular"
+                    Clicked="btnCalcularIess_Clicked"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
